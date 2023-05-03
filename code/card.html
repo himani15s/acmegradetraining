@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: green;
+            width:200px;
+            height: 300px;
+            margin: 80px;
+            border-radius: 12px;
+
+
+        }
+        .title{
+           
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(65, 61, 61);
+            color: #ffffff;
+            border-radius: 12px;
+            border-top:12px;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .item{
+
+            width: 80%;
+            height: 125px;
+            border-radius: 51%;
+            margin-top: 20px;
+            margin-left: 15px;
+
+        }
+        .qty_ip{
+            width: 80px;
+            margin-top: 12px;
+
+        }
+        .center{
+            text-align: center;
+        }
+        .addbt,.subbt{
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+
+        }
+        .addbt{
+            color: greenyellow;
+        }
+        .subbt{
+            color: rgb(193, 184, 143);
+        }
+        .cart_wrap{
+
+            margin-top: 10px;
+        }
+        .cartbtn{
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="title center">black-formal</div>
+        <img class="item" src="/code/shoes.jpg" alt="">
+        <div class="center" >
+        <button class="addbt">+</button>
+        <input class="qty_ip" type="text" >
+        <button class="subbt">-</button>
+
+    </div>
+    <div class="center cart_wrap">
+        <button class="cartbtn">add to cart</button>
+    </div>
+    </div>
+</body>
+</html>
