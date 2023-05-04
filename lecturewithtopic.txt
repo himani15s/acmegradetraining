@@ -1,0 +1,95 @@
+**************************lecture 1*********************
+1. h1,input
+2. button,h1 with image and css
+3. change color according to user(using script)
+
+
+
+
+
+
+
+
+
+**************************lecture 2*********************
+1. we can add css for class (classname-which can be same for many element)
+    by
+    .classname
+    {
+    }
+2. we can define multiple class in one container like <div class="classname1 cn2 cn3>  
+3. we will give priorty according to order of writing code in which manner in internal css.
+   -->first css priorty will be given to inline css
+   -->if you want to priortize some tag you have to write important in that
+ 
+
+
+
+
+
+
+**************************lecture 3*************************
+1. padding
+   padding: top,right,bottom,left;
+   padding topbottom-leftright
+
+   border
+   border-width: 20px ;
+   border-color: red;
+   border-style: dashed; 
+   instead of that we can right
+   border: 10px red solid; 
+
+2.margin
+   margin will affect other element 
+   margin is outside area of border of the element
+
+3.DIV container
+for making whole body screen color 
+ body
+{
+    background-color: color;
+} 
+ we can div under div which is block element which means next element come to under next line
+
+4.span -span - it will not devide content in between we can use  in between line this span container
+5. center- 
+   text-align:center - to get text in center we can do.
+   to get but as center we use width 100%
+   to get as center heading we  use display:inline block it 
+6.small project on box model which show add to cart product
+
+
+
+
+***********************lecture 4 ***************************
+1.
+relative position:-relative positiove move to its current position
+margin will cover entire area.
+
+2.
+absolute will change position according to viewport
+if we will give parent as a relative then child absolute follow positon of parent.
+
+3. 
+translate-if we want to put item exactly in center then we will use translate function
+
+4.
+we can hide element by display hidden.
+we want element when it is hover on menu.
+
+5.
+position:absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%) ;
+use to center an item.
+
+6.
+position fixed will stay fixed for every situtation
+
+7.sticky will behave like fixed and moving both
+after reaching it max widhth it will fixed.
+it look like it is moving while scrolling.
+
+   
