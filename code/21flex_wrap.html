@@ -1,0 +1,62 @@
+<!-- ****************lecture 5 topic 2**********
+gap-it will create gap between elements. 
+child will take space according to parent if parent consume more space the child child will take its whole space but if parent widht is equal to child child will automatically shrink.
+
+
+how much element you want in one row it can control by parent.
+
+"align-items" aligns the individual flex items along the cross-axis,align item can not do its work when height and wrap barrier.
+"align-content" aligns the lines of flex items along the cross-axis in a multi-line flex container.it will work when height is barrier and also wrap it applied we have to use aligncontent.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            background-color: rgb(58, 130, 130);
+            width: 600px;
+            flex-wrap: wrap;
+            gap:2px;
+            height: 600px;
+            align-items: flex-start;
+        }
+        .b{
+            background-color: rgb(175, 159, 189);
+            font: optional;
+            font-size: larger;
+            width: 100px;
+            padding: 10px;
+            height: 40px;
+          
+      
+
+        }
+        .b3{
+            align-self: flex-end;
+        }
+        .parent:hover .b3{
+            align-self:flex-start;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3</div>
+        <div class="b b4">4</div>
+        <div class="b b5">5</div>
+    </div>
+    
+    
+</body>
+</html>

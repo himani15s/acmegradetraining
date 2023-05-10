@@ -92,4 +92,39 @@ position fixed will stay fixed for every situtation
 after reaching it max widhth it will fixed.
 it look like it is moving while scrolling.
 
-   
+
+
+
+******************************lecture 5******************************
+
+1.flex:-In HTML, "flex" usually refers to the flexible box layout model, also known as Flexbox. Flexbox is a layout system that allows developers to create flexible and responsive layouts for web pages.   
+
+inline-block use in child while flex used in parent.
+
+  justify-content will only for row direction it will not work for column beacuse in row in jnow  ending and starting point.it will work for column when height is given.
+ browser can no determine how many height it want.
+
+  flex-direction
+  justify-content-"justify-content" is used to align the flex items along the main axis of the flex container. The main axis is the primary axis of the flex container. The possible values for "justify-content" are.it have horizonatal control:
+  flex-wrap
+  align-content
+  align-item- It specifies the default alignment for all the flex items within the flex container when they do not have a specific alignment set for themselves.it have vertical control.
+
+   we can make many things by applying all properties
+     if change direction column then jusitify-content work vertical .
+     if change direction row then align-items work horizontal.
+
+
+2.flexwrap
+ gap-it will gap between two element.
+ it will create gap between elements. 
+child will take space according to parent if parent consume more space the child child will take its whole space but if parent widht is equal to child child will automatically shrink.
+parent determine how much space shild should occupied.
+
+how much element you want in one row it can control by parent.
+
+"align-items" aligns the individual flex items along the cross-axis,align item can not do its work when height and wrap barrier.
+"align-content" aligns the lines of flex items along the cross-axis in a multi-line flex container.it will work when height is barrier and also wrap it applied we have to use aligncontent.
+
+
+3.    align-self:- if we want to give propeties to indivisual item then we give align self
