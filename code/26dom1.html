@@ -1,0 +1,43 @@
+<!-- ************lecture 6 topic 4********  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">welcome</h1>
+    <!-- <button onclick="alert('i am touched')">submit</button> -->
+    <button onclick="test()">submit</button>
+ 
+
+    <script>
+       function test()
+       {
+        age=prompt("enter age")
+        h1obj=document.getElementById("title")
+        h1obj.innerHTML="your age is "+age
+        //ternary operator
+        h1obj.style.color=age<18?"red":"green";
+    //     if(age<18)
+    //     {
+    //         console.log("minor")
+           
+    //         h1obj.style.color="red"
+    //     }
+    //    else
+    //     {
+    //         console.log("major")
+          
+    //         h1obj.style.color="green"
+    //     }
+       }
+    //    h1obj= document.getElementById("title");
+    //    h1obj.style.color="green";
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="age">
+    <button onclick="calc()">submit</button>
+    <h1 id="output"></h1>
+    <script>
+        ageobj=document.getElementById("age");
+        outobj=document.getElementById("output");
+        function calc()
+        {
+        outobj.innerHTML=ageobj.value<18?'minor':'major';
+        }
+    </script>
+    
+</body>
+</html>

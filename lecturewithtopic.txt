@@ -128,3 +128,43 @@ how much element you want in one row it can control by parent.
 
 
 3.    align-self:- if we want to give propeties to indivisual item then we give align self
+
+
+..........................................javascript.......................................
+                             *****lecture 6 ***************
+
+1.
+javascript:- whatever html code written javascript will convert it into dom(document object model)
+it will change the first welcome it treated like array give indexing.
+we can get documentgetelement by its id, tagname,classname etc.
+.style.color will change colour inside style.
+.innerHTMl=" " is change the content of inside html.
+we can change manualy  in html code directly but to hange in particular condition we will do in js and use function for examle onclick fucntion we will use to change certain properties.
+we can not change inner html in css but in js can do it.
+
+
+2.
+-> to give alert when opening a website we will use alert function
+        alert("dont do it");
+->prompt- take input from user.
+-> ,+variable is syntax to print variable in ALERT and for console.log we use ,variable.
+
+3.
+->for loop
+->names=[]; for giving string.
+       names=["himani","hinu","minu","tinu","rinu"];
+        for(i=0;i<=4;i++)
+        {
+            console.log("your i value is ",i,names[i]);
+        }
+
+4.we will link  to changing properties with an event.
+ INSIDE tage all things is inner html
+ explain about how actions is performed while while event is occur
+
+ 5. self programme for login credentials
+
+***************************lecture 7******************************
+
+1. pallindrome 
+2. 

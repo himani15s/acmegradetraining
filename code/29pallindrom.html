@@ -1,0 +1,27 @@
+<!-- *****************lecture 7 topic 1**************** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" onchange="checkpallindrome()">
+    <h1 id="disp"></h1>
+    <script>
+        function checkpallindrome()
+        {
+            nameobj=document.getElementById("name");
+            // we do not have reverse function for string but we have reverse function for array
+            // split function used to split string into array
+            //join used to convert arrat into string
+           reversed= nameobj.value.split("").reverse().join("");
+     
+           dispobj=document.getElementById("disp");
+           dispobj.innerHTML=nameobj.value===reversed?"pallindrome":"no pallendrome";
+           
+            
+        }
+    </script>
+</body>
+</html>
