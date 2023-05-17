@@ -1,1 +1,40 @@
 <!-- *****************lecture 7 topic 2**************** -->`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div id="demo">
+
+    </div>
+    <button onclick="create()">click </button>
+    <script>
+        chat=["himani","jay","poonam","tanu"]
+        function create()
+        {
+        
+        // h1obj=document.createElement("h1");
+        // h1obj.innerHTML="i am genesis";
+        // demoobj=document.getElementById("demo")
+        // demoobj.appendChild(h1obj)
+
+
+        demoobj=document.getElementById("demo")
+        for(i=0; i<chat.length;i++)
+        {
+                    
+        h1obj=document.createElement("h1");
+        h1obj.innerHTML=chat[i];
+        demoobj.appendChild(h1obj)
+
+        }
+
+        }
+    </script>
+</body>
+</html>

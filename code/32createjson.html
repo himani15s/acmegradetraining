@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: fit-content;
+            background-color: rgb(182, 176, 128);
+            height: fit-content;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .title
+        {
+            font-size:24px ;
+            font-weight: bold;
+
+        }
+        .collection{
+            color: gold;
+            background-color: black;
+        }
+        .search_wrap{
+            margin: 50px;
+
+        }
+        .search{
+            font-size: 20px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="name" placeholder="movie name">
+    <input type="number" id="year" placeholder="release year">
+    <input type="text" id="collection" placeholder="box office">
+   <button onclick="addmovie()">ADD</button>
+   <div class="search_wrap" >
+    <!-- <input type="text" class="search" id="searchip" onkeyup="searchmovie()"> -->
+    <input type="text" class="search" id="searchip" onkeyup="filtermovie()">
+    <!-- <button onclick="searchmovie()">search</button> -->
+   </div>
+   <div id="demo">
+
+   </div>
+  
+
+
+    <script>
+
+
+    
+    imdb=[
+            {name:"avengers",year:2013,collection:"13mil"},
+            {name:"hulk",year:2010,collection:"100mil"},
+            {name:"thor",year:2014,collection:"103mil"},
+            {name:"black panther",year:2015,collection:"130mil"},
+            {name:"spiderman",year:2016,collection:"109mil"},
+            {name:"thor",year:2020,collection:"13mil"},
+        ]
+        
+    //     function render()
+    //     {
+    //    html="";
+    //     for(i=0;i<imdb.length;i++)
+    //     {
+    //         html+=`<div class="card">
+    //         <div class="title">${imdb[i].name}</div>
+    //         <div class="year">${imdb[i].year}</div>
+    //         <div class="collection">${imdb[i].collection}</div>
+    //         <div>
+    //             <button onclick="delmovie(${i})">delete</button>
+    //         </div>
+            
+    //         </div>`;
+
+    //     }
+        
+      
+    //    console.log(html);
+    //    demoobj=document.getElementById("demo");
+    //    demoobj.innerHTML=html;
+    //     }
+
+    function render(source)
+        {
+       html="";
+        for(i=0;i<source.length;i++)
+        {
+            html+=`<div class="card">
+            <div class="title">${source[i].name}</div>
+            <div class="year">${source[i].year}</div>
+            <div class="collection">${source[i].collection}</div>
+            <div>
+                <button onclick="delmovie(${i})">delete</button>
+            </div>
+            
+            </div>`;
+
+        }
+        
+      
+       console.log(html);
+       demoobj=document.getElementById("demo");
+       demoobj.innerHTML=html;
+        }
+        render(imdb);
+       function addmovie()
+       {
+        nameobj=document.getElementById("name");
+        yearobj=document.getElementById("year");
+       collectionobj=document.getElementById("collection");
+       movieobj={name:nameobj.value, year:yearobj.value,collection:collectionobj.value}
+       imdb.push(movieobj);
+       console.log(imdb);
+      render(imdb);
+       }
+      function delmovie(ind)
+      {
+        // alert("recieved delete at index "+ind);
+        imdb.splice(ind,1);
+        render(imdb);
+      }
+      function filtermovie()
+      {
+        searchobj=document.getElementById("searchip")
+        searchstring=searchobj.value.toLowerCase();
+
+        res=imdb.filter(movie=>{
+            sourcestring=Object.values(movie).join("").toLowerCase();
+            const res=searchstring.split("").filter(char=>sourcestring.includes(char))
+            // return sourcestring.includes(searchstring)
+            return res.length==searchstring.length
+
+        }
+        )
+        render(res);
+      }
+      function searchmovie()
+      {
+        searchop=[]
+        searchobj=document.getElementById("searchip")
+  
+       
+        for(i=0;i<imdb.length;i++)
+        {
+            searchlower=searchobj.value.toLowerCase();
+    imdblower=imdb[i].name.toLowerCase();
+            if(imdblower.includes(searchlower))
+            {
+            // console.log(imdb[i].name,"found")
+            searchop.push(imdb[i])
+            }
+        }
+        console.log("matched results",searchop)
+        if(searchobj.value.length==0)
+        {
+            searchop=imdb;
+
+        }
+        render(searchop);
+      }
+       
+    </script>
+</body>
+
+</html>

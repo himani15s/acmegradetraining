@@ -1,0 +1,37 @@
+<!-- *****************lecture 7 topic 3**************** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+
+    </div>
+    <button onclick="create()">click</button>
+    <script>
+        // demoobj=document.getElementById("demo");
+        // //in this pervious content will disapeared
+        // function create()
+        // {
+        //     demoobj.innerHTML="<h1>i am gensis</h1>";
+        // }
+
+        chat=["himani","jay","poonam","tanu"]
+        demoobj=document.getElementById("demo")
+        function create()
+        {
+
+        
+        for(i=0; i<chat.length;i++)
+        {
+                // demoobj.innerHTML=  demoobj.innerHTML+"<h1>"+chat[i]+"</h1>"
+                demoobj.innerHTML=  demoobj.innerHTML+`<h1>${i}${chat[i]}</h1>`
+
+        }
+    }
+    </script>
+    
+</body>
+</html>

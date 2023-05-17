@@ -167,4 +167,94 @@ we can not change inner html in css but in js can do it.
 ***************************lecture 7******************************
 
 1. pallindrome 
-2. 
+2. we can create dynamic element for previsouly we create element static and then apply js                     in that.
+ we can create element and we have to append child element with parent block.
+     h1obj=document.createElement("tagname");
+        h1obj.innerHTML="tag content";
+3.we can write dynamic tag in non standard way but in  this previous content will not appened it will disappeared.
+4.
+  object ={name:himani",age:20,gender:"male"}
+  json-javascript object notation, nested object
+   reperesent complex data into human readable form
+
+/////////run in console of browser//////////
+ data= 
+[
+{    
+     name:"himani",
+     college:
+        {
+           clg_name:"IIM university",
+           rollno:"002",
+           dept:"informatio technology",    
+           subjects:["c++","python","c"]
+        },
+     home:{
+           address:{
+
+                        streetname:"SFEGdfgf",
+                         cityname:"jaipur"
+                    }
+          }
+}
+
+]
+
+array of object
+[
+{name:"HINU",img:"path"},
+{name:"MINU",img:"path"},
+{name:"TINU",img:"path"}
+ ]
+
+[
+{
+ pid:"",
+ name:"",
+ img:"",
+ review:[
+             {name:"",rating:"",reviewtext:"",image[]},
+             {name:"",rating:"",reviewtext:"",image[]},
+             {name:"",rating:"",reviewtext:"",image[]}
+        
+        
+        ]",
+avg_rating:"4.5",
+discount:"12",
+price:"500:
+
+},
+
+{
+ pid:"",
+ name:"",
+ img:"",
+ review:[
+             {name:"",rating:"",reviewtext:"",image[]},
+             {name:"",rating:"",reviewtext:"",image[]},
+             {name:"",rating:"",reviewtext:"",image[]}
+        
+        
+        ]",
+avg_rating:"4.5",
+discount:"12",
+price:"500:
+
+}
+]
+ 
+
+*****************************lecture 8************************************
+
+1.create imdb data json file movie name.
+  push operation perfomed in push data in database(json file).
+  splice function for delete a function.
+  how to render operation.
+
+***********lecture 9****************************************************
+add search button to website
+we have tolowercase() available toh compare string
+includes()
+we can perform in string and array for partial match welcome==we false
+welcomeincludes(we) true
+bootstrapintro
